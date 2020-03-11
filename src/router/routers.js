@@ -1,4 +1,4 @@
-const { log } = require('./db')
+const { log } = require('../db/index')
 const { queryToObj } = require('../utils/util')
 
 module.exports = {

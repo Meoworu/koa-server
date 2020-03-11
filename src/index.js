@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const cors = require('koa2-cors') //跨域处理
-const routers = require('./lib/routers')
-const config = require('./lib/res-config')
+const routers = require('./router/routers')
+const config = require('./utils/koaConfig')
 const koaRouter = require('koa-router') //路由模块
 const router = koaRouter()
 
