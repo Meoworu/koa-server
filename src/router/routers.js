@@ -23,7 +23,8 @@ module.exports = {
     path: '/getLog',
     type: 'get',
     method: async ctx => {
-      ctx.body = '获取日志成功'
+      const data = await log.query()
+      ctx.body = data
     }
   }
 }

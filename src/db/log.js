@@ -10,7 +10,7 @@ const logSchema = new Schema({
 const logModel = mongoose.model('log', logSchema)
 
 class PerformanceLog {
-  constructor() { }
+  constructor() {}
 
   // 查询
   query() {
@@ -33,7 +33,6 @@ class PerformanceLog {
           reject(err)
         }
         resolve(res)
-        console.log(res)
       })
     })
   }
